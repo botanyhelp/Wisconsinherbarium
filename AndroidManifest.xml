@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wisc.botany.Wisconsinherbarium"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_uwlauncher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.wisc.botany.Wisconsinherbarium.Herbarium"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Families"
+            android:name=".Families" >
+            <intent-filter >
+                <action android:name="edu.wisc.botany.Wisconsinherbarium.Families" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:label="Genus"
+            android:name=".Genus" >
+            <intent-filter >
+                <action android:name="edu.wisc.botany.Wisconsinherbarium.Genus" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Common Names"
+            android:name=".Common" >
+            <intent-filter >
+                <action android:name="edu.wisc.botany.Wisconsinherbarium.Common" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Results"
+            android:name=".Results" >
+            <intent-filter >
+                <action android:name="edu.wisc.botany.Wisconsinherbarium.Results" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Species"
+            android:name=".Species" >
+            <intent-filter >
+                <action android:name="edu.wisc.botany.Wisconsinherbarium.Species" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Specimens"
+            android:name=".Specimens" >
+            <intent-filter >
+                <action android:name="edu.wisc.botany.Wisconsinherbarium.Specimens" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+    
+</manifest>

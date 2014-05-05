@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            tools:context=".Herbarium" >
+
+            <Button
+                android:id="@+id/btn_Family"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickFamily"
+                android:text="Search By Family" />
+
+            <Button
+                android:id="@+id/btn_Genus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickGenus"
+                android:text="Search By Genus" />
+
+            <Button
+                android:id="@+id/btn_Common"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickCommon"
+                android:text="Search By Common Name" />
+
+            <TextView
+                android:id="@+id/txt_Specimen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="240dp"
+                android:layout_height="320dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
